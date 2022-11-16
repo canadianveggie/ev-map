@@ -1,11 +1,16 @@
 data:
 	mkdir -p data
 
-install: data
+output:
+	mkdir -p output
+
+dirs: data output
+
+install: dirs
 	poetry env use python3.9
 	poetry install
 
-jupyter: data
+jupyter: dirs
 	poetry run jupyter-lab
 
 jupyter-clean:
@@ -13,5 +18,10 @@ jupyter-clean:
 
 gifs: images/ev_highways_J1772COMBO_415.gif
 
-images/ev_highways_J1772COMBO_415.gif: images/ev_highways_J1772COMBO_415_2*.png
-	convert -delay 25 -loop 0 images/ev_highways_J1772COMBO_415_2*.png -annotate +1150+970 '@canadianveggie' -crop 1000x900+270+100\! images/ev_highways_J1772COMBO_415.gif
+images/ev_highways_J1772COMBO_415.gif: output/monthly_ev_highways_J1772COMBO_415_*.png
+	convert -delay 25 -loop 0 output/monthly_ev_highways_J1772COMBO_415_*.png -annotate +1150+970 '@canadianveggie' -crop 1000x900+270+100\! images/ev_highways_J1772COMBO_415.gif
+
+annotated: $(patsubst output/%,images/%,$(wildcard output/ev_highways_*.png))
+
+images/ev_highways_%.png: output/ev_highways_%.png
+	convert $< -annotate +1150+970 '@canadianveggie' -crop 1000x900+270+100\! $@
