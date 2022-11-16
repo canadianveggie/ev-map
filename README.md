@@ -6,6 +6,12 @@ Analyzing Canada's highways for EV accessibility.
 
 Loads the highway system maps and EV fast chargers and determines which highways are traversable by EV.
 
+## Interactive Map
+
+[<img src="images/kepler_thumbnail.png">](https://canadianveggie.github.io/canada-ev-map/)
+
+An interactive version of the map running in Kepler.gl is also [available](https://canadianveggie.github.io/canada-ev-map/).
+
 ## Running locally
 
 You need to have python installed locally.
