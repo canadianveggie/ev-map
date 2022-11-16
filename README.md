@@ -25,3 +25,7 @@ This will open up a Jupyter notebook that will run and analyze the data.
 
 `make gifs`
 
+## Data Sources
+
+* Statistics Canada's [Road Network File, Reference Guide, 2022](https://www150.statcan.gc.ca/n1/pub/92-500-g/92-500-g2022001-eng.htm)
+* Transport Canada's [Zero-emission vehicle charging stations](https://tc.canada.ca/en/road-transportation/innovative-technologies/zero-emission-vehicles/zero-emission-vehicle-charging-stations#/find/nearest?country=CA&fuel=ELEC)
