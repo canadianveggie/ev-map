@@ -54,6 +54,8 @@
         <script src="config.js"></script>
         <script src="highwaysCA.js"></script>
         <script src="stationsCA.js"></script>
+        <script src="highwaysUS.js"></script>
+        <script src="stationsUS.js"></script>
       </head>
       <body>
         <!-- We will put our React component inside this div. -->
@@ -196,7 +198,7 @@
            * to add new data and customize behavior
            */
           (function customize(keplerGl, store) {
-            const datasets = [highwaysCA, stationsCA];
+            const datasets = [highwaysCA, stationsCA, highwaysUS, stationsUS];
             const loadedData = keplerGl.KeplerGlSchema.load(
               datasets,
               config
