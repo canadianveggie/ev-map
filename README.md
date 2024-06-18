@@ -4,7 +4,7 @@ Analyzing Canada and USA's highways for EV accessibility.
 
 Loads the highway system maps and EV fast chargers and determines which highways are traversable by EV while fast charging.
 
-![Canada's EV Fast Charging Highways](images/ev_highways_J1772COMBO_415.gif)
+![Canada's EV Fast Charging Highways](images/ev_highways_CA_J1772COMBO_415.gif)
 ![America's EV Fast Charging Highways](images/ev_highways_US_J1772COMBO_415.gif)
 
 
