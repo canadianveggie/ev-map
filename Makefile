@@ -19,7 +19,7 @@ jupyter-clean:
 gifs: images/ev_highways_CA_J1772COMBO_415.gif images/ev_highways_CA_TESLA_415.gif images/ev_highways_US_J1772COMBO_415.gif images/ev_highways_US_TESLA_415.gif
 
 images/ev_highways_CA_J1772COMBO_415.gif: output/monthly_ev_highways_CA_J1772COMBO_415_*.png
-	convert -delay 25 -loop 0 output/monthly_ev_highways_J1772COMBO_415_*.png -annotate +1120+1070 '@canadianveggie' images/ev_highways_CA_J1772COMBO_415.gif
+	convert -delay 25 -loop 0 output/monthly_ev_highways_CA_J1772COMBO_415_*.png -annotate +1120+1070 '@canadianveggie' images/ev_highways_CA_J1772COMBO_415.gif
 
 images/ev_highways_CA_TESLA_415.gif: output/monthly_ev_highways_CA_TESLA_415_*.png
 	convert -delay 25 -loop 0 output/monthly_ev_highways_CA_TESLA_415_*.png -annotate +1120+1070 '@canadianveggie' images/ev_highways_CA_TESLA_415.gif
